@@ -3,5 +3,21 @@
     <head></head>
     <body>
         <h1>Defense Department contracts announced in February</h1>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Date</th>
+                <th>Service</th>
+                <th>Company</th>
+                <th>Amount</th>
+            </tr>
+        {% for obj in object_list %}
+            <tr>
+                <td>{{ obj.Date }}</td>
+                <td>{{ obj.Service }}</td>
+                <td>{{ obj.Parent }}</td>
+                <td>{{ obj.Amount }}</td>
+            </tr>
+        {% endfor %}
+        </table>
     </body>
 </html>
