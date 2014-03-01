@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="en">
+    <head></head>
+    <body>
+        <h1>Defense Department contracts announced in February</h1>
+        <div id="chartContainer">
+            <script src="http://d3js.org/d3.v3.min.js"></script>
+            <script src="http://dimplejs.org/dist/dimple.v1.1.5.min.js"></script>
+            <script type="text/javascript">
+            var svg = dimple.newSvg("#chartContainer", 590, 400);
+            d3.csv("static/daily_totals.csv", function (data) {
+            var myChart = new dimple.chart(svg, data);
+            myChart.setBounds(60, 30, 510, 305)
+            var x = myChart.addCategoryAxis("x", "Date");
+            x.addOrderRule("Date");
+            myChart.addMeasureAxis("y", "Amount");
+            myChart.addSeries(null, dimple.plot.bar);
+            myChart.draw();
+            });
+            </script>
+        </div>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Service</th>
+                <th>Company</th>
+                <th>Amount</th>
+            </tr>
+        
+            <tr>
+                <td><a href="1/">1</a></td>
+                <td>2/3/2014</td>
+                <td>AIR FORCE</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$14,430,612 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="2/">2</a></td>
+                <td>2/3/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Sklar Instruments Corp.</td>
+                <td>$41,426,795 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="3/">3</a></td>
+                <td>2/3/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Avfuel Corp.</td>
+                <td>$12,058,113 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="4/">4</a></td>
+                <td>2/3/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>OES Inc.</td>
+                <td>$8,566,833 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="5/">5</a></td>
+                <td>2/3/2014</td>
+                <td>NAVY</td>
+                <td>Armag Corp.</td>
+                <td>$49,971,770 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="6/">6</a></td>
+                <td>2/3/2014</td>
+                <td>NAVY</td>
+                <td>Boeing Co.</td>
+                <td>$42,179,054 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="7/">7</a></td>
+                <td>2/4/2014</td>
+                <td>AIR FORCE</td>
+                <td>KS International LLC</td>
+                <td>$623,300,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="8/">8</a></td>
+                <td>2/4/2014</td>
+                <td>ARMY</td>
+                <td>Booz Allen Hamilton Inc.</td>
+                <td>$9,990,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="9/">9</a></td>
+                <td>2/4/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Sagent Pharmaceuticals Inc.</td>
+                <td>$28,407,510 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="10/">10</a></td>
+                <td>2/4/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Imperial Flying Service Inc.</td>
+                <td>$15,613,492 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="11/">11</a></td>
+                <td>2/4/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Denisply Caulk</td>
+                <td>$13,098,664 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="12/">12</a></td>
+                <td>2/4/2014</td>
+                <td>NAVY</td>
+                <td>General Dynamics Corp.</td>
+                <td>$520,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="13/">13</a></td>
+                <td>2/4/2014</td>
+                <td>NAVY</td>
+                <td>Boeing Co.</td>
+                <td>$21,697,098 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="14/">14</a></td>
+                <td>2/5/2014</td>
+                <td>AIR FORCE</td>
+                <td>General Atomics</td>
+                <td>$117,286,467 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="15/">15</a></td>
+                <td>2/5/2014</td>
+                <td>AIR FORCE</td>
+                <td>General Atomics</td>
+                <td>$16,595,766 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="16/">16</a></td>
+                <td>2/5/2014</td>
+                <td>ARMY</td>
+                <td>Cray Inc.</td>
+                <td>$21,800,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="17/">17</a></td>
+                <td>2/5/2014</td>
+                <td>ARMY</td>
+                <td>Cray Inc.</td>
+                <td>$21,800,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="18/">18</a></td>
+                <td>2/5/2014</td>
+                <td>ARMY</td>
+                <td>Raytheon Co.</td>
+                <td>$16,286,396 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="19/">19</a></td>
+                <td>2/5/2014</td>
+                <td>ARMY</td>
+                <td>HRD Engineering</td>
+                <td>$9,500,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="20/">20</a></td>
+                <td>2/5/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Wright &amp; Wright Machinery Co.</td>
+                <td>$87,500,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="21/">21</a></td>
+                <td>2/5/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>ReadyMat US LLC</td>
+                <td>$9,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="22/">22</a></td>
+                <td>2/5/2014</td>
+                <td>NAVY</td>
+                <td>Helix-Hon</td>
+                <td>$30,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="23/">23</a></td>
+                <td>2/5/2014</td>
+                <td>NAVY</td>
+                <td>Allan C. Bamforth Jr Engineer Surveyor Ltd.</td>
+                <td>$15,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="24/">24</a></td>
+                <td>2/5/2014</td>
+                <td>NAVY</td>
+                <td>Dignitas Technologies Inc.</td>
+                <td>$7,685,234 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="25/">25</a></td>
+                <td>2/6/2014</td>
+                <td>ARMY</td>
+                <td>Sauer Inc.</td>
+                <td>$56,038,640 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="26/">26</a></td>
+                <td>2/6/2014</td>
+                <td>ARMY</td>
+                <td>Sundt Construction Inc.</td>
+                <td>$25,750,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="27/">27</a></td>
+                <td>2/6/2014</td>
+                <td>ARMY</td>
+                <td>Gearhart Brothers Services</td>
+                <td>$8,629,223 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="28/">28</a></td>
+                <td>2/6/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Produce One Inc.</td>
+                <td>$36,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="29/">29</a></td>
+                <td>2/6/2014</td>
+                <td>DEFENSE THREAT REDUCTION AGENCY</td>
+                <td>Northern Arizona University</td>
+                <td>$6,988,284 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="30/">30</a></td>
+                <td>2/7/2014</td>
+                <td>ARMY</td>
+                <td>Aaski Technology Inc.</td>
+                <td>$497,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="31/">31</a></td>
+                <td>2/7/2014</td>
+                <td>ARMY</td>
+                <td>Snap-on</td>
+                <td>$37,718,703 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="32/">32</a></td>
+                <td>2/7/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Federal Contracts Corp.</td>
+                <td>$157,500,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="33/">33</a></td>
+                <td>2/7/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Gentex Corp.</td>
+                <td>$14,580,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="34/">34</a></td>
+                <td>2/7/2014</td>
+                <td>NAVY</td>
+                <td>Navmar Applied Sciences Corp.</td>
+                <td>$12,500,411 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="35/">35</a></td>
+                <td>2/10/2014</td>
+                <td>AIR FORCE</td>
+                <td>Alion Science and Technology Corp.</td>
+                <td>$12,851,147 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="36/">36</a></td>
+                <td>2/10/2014</td>
+                <td>ARMY</td>
+                <td>Lockheed Martin Corp.-Boeing Co.</td>
+                <td>$157,362,903 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="37/">37</a></td>
+                <td>2/10/2014</td>
+                <td>ARMY</td>
+                <td>Weeks Marine</td>
+                <td>$9,570,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="38/">38</a></td>
+                <td>2/10/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Vermilion Valley Produce Co.</td>
+                <td>$12,937,595 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="39/">39</a></td>
+                <td>2/10/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Racoe Inc.</td>
+                <td>$8,709,452 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="40/">40</a></td>
+                <td>2/10/2014</td>
+                <td>U.S. SPECIAL OPERATIONS COMMAND</td>
+                <td>Oregon Iron Works Inc.</td>
+                <td>$400,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="41/">41</a></td>
+                <td>2/11/2014</td>
+                <td>AIR FORCE</td>
+                <td>Exelis Corp.</td>
+                <td>$38,299,490 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="42/">42</a></td>
+                <td>2/11/2014</td>
+                <td>AIR FORCE</td>
+                <td>L-3 Communications Holdings Inc.</td>
+                <td>$17,919,946 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="43/">43</a></td>
+                <td>2/11/2014</td>
+                <td>AIR FORCE</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$8,049,493 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="44/">44</a></td>
+                <td>2/11/2014</td>
+                <td>NAVY</td>
+                <td>Data Link Solutions LLC</td>
+                <td>$66,294,150 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="45/">45</a></td>
+                <td>2/11/2014</td>
+                <td>NAVY</td>
+                <td>United Technologies Corp.</td>
+                <td>$10,906,165 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="46/">46</a></td>
+                <td>2/11/2014</td>
+                <td>U.S. TRANSPORTATION COMMAND</td>
+                <td>Patriot Team</td>
+                <td>$804,788,084 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="47/">47</a></td>
+                <td>2/11/2014</td>
+                <td>U.S. TRANSPORTATION COMMAND</td>
+                <td>Multiple</td>
+                <td>$635,517,611 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="48/">48</a></td>
+                <td>2/12/2014</td>
+                <td>AIR FORCE</td>
+                <td>KS International LLC</td>
+                <td>$215,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="49/">49</a></td>
+                <td>2/12/2014</td>
+                <td>AIR FORCE</td>
+                <td>Boeing Co.</td>
+                <td>$51,233,782 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="50/">50</a></td>
+                <td>2/12/2014</td>
+                <td>AIR FORCE</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$16,814,091 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="51/">51</a></td>
+                <td>2/12/2014</td>
+                <td>ARMY</td>
+                <td>Honeywell International Inc.</td>
+                <td>$9,943,752 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="52/">52</a></td>
+                <td>2/12/2014</td>
+                <td>ARMY</td>
+                <td>HNTB Corp.</td>
+                <td>$9,500,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="53/">53</a></td>
+                <td>2/12/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>SonoSite Inc.</td>
+                <td>$39,672,731 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="54/">54</a></td>
+                <td>2/12/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Tullahoma Industries Inc.</td>
+                <td>$9,201,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="55/">55</a></td>
+                <td>2/12/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Honeywell International Inc.</td>
+                <td>$8,642,970 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="56/">56</a></td>
+                <td>2/12/2014</td>
+                <td>NAVY</td>
+                <td>Multiple</td>
+                <td>$50,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="57/">57</a></td>
+                <td>2/12/2014</td>
+                <td>NAVY</td>
+                <td>Sealaska Environmental Services LLC</td>
+                <td>$30,794,172 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="58/">58</a></td>
+                <td>2/12/2014</td>
+                <td>NAVY</td>
+                <td>Boeing Co.</td>
+                <td>$18,977,907 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="59/">59</a></td>
+                <td>2/12/2014</td>
+                <td>NAVY</td>
+                <td>L-3 Communications Holdings Inc.</td>
+                <td>$6,530,626 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="60/">60</a></td>
+                <td>2/14/2014</td>
+                <td>AIR FORCE</td>
+                <td>AAR Corp.</td>
+                <td>$133,024,408 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="61/">61</a></td>
+                <td>2/14/2014</td>
+                <td>AIR FORCE</td>
+                <td>Colsa Corp.</td>
+                <td>$55,705,947 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="62/">62</a></td>
+                <td>2/14/2014</td>
+                <td>AIR FORCE</td>
+                <td>Oasis Systems LLC</td>
+                <td>$55,705,947 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="63/">63</a></td>
+                <td>2/14/2014</td>
+                <td>AIR FORCE</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$16,421,355 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="64/">64</a></td>
+                <td>2/14/2014</td>
+                <td>ARMY</td>
+                <td>Jacobs Engineering</td>
+                <td>$45,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="65/">65</a></td>
+                <td>2/14/2014</td>
+                <td>ARMY</td>
+                <td>Northrop Grumman Corp.</td>
+                <td>$12,430,650 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="66/">66</a></td>
+                <td>2/14/2014</td>
+                <td>ARMY</td>
+                <td>Plateau Software Inc.</td>
+                <td>$9,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="67/">67</a></td>
+                <td>2/14/2014</td>
+                <td>ARMY</td>
+                <td>American Ordnance LLC</td>
+                <td>$7,547,742 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="68/">68</a></td>
+                <td>2/14/2014</td>
+                <td>DEFENSE FINANCE AND ACCOUNTING SERVICE</td>
+                <td>CACI International Inc.</td>
+                <td>$10,803,390 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="69/">69</a></td>
+                <td>2/14/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$30,814,317 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="70/">70</a></td>
+                <td>2/14/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$16,584,869 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="71/">71</a></td>
+                <td>2/14/2014</td>
+                <td>NAVY</td>
+                <td>Multiple</td>
+                <td>$90,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="72/">72</a></td>
+                <td>2/14/2014</td>
+                <td>NAVY</td>
+                <td>BAE Systems Plc</td>
+                <td>$56,967,490 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="73/">73</a></td>
+                <td>2/14/2014</td>
+                <td>NAVY</td>
+                <td>Navmar Applied Sciences Corp.</td>
+                <td>$44,695,815 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="74/">74</a></td>
+                <td>2/14/2014</td>
+                <td>NAVY</td>
+                <td>Raytheon Co.</td>
+                <td>$9,522,446 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="75/">75</a></td>
+                <td>2/18/2014</td>
+                <td>ARMY</td>
+                <td>Airbus SAS</td>
+                <td>$22,856,085 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="76/">76</a></td>
+                <td>2/18/2014</td>
+                <td>ARMY</td>
+                <td>Jacobs Engineering</td>
+                <td>$9,500,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="77/">77</a></td>
+                <td>2/18/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Combat Medical Systems LLC</td>
+                <td>$36,396,530 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="78/">78</a></td>
+                <td>2/18/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Eye Safety Systems Inc.</td>
+                <td>$9,804,328 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="79/">79</a></td>
+                <td>2/19/2014</td>
+                <td>ARMY</td>
+                <td>Raptor Training Services LLC</td>
+                <td>$97,800,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="80/">80</a></td>
+                <td>2/19/2014</td>
+                <td>ARMY</td>
+                <td>Clark Enterprises Inc.</td>
+                <td>$39,482,450 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="81/">81</a></td>
+                <td>2/19/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Raytheon Co.</td>
+                <td>$98,189,220 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="82/">82</a></td>
+                <td>2/19/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>US Foods Inc.</td>
+                <td>$72,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="83/">83</a></td>
+                <td>2/19/2014</td>
+                <td>NAVY</td>
+                <td>Raytheon Co.</td>
+                <td>$72,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="84/">84</a></td>
+                <td>2/19/2014</td>
+                <td>NAVY</td>
+                <td>BAE Systems Plc</td>
+                <td>$15,222,617 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="85/">85</a></td>
+                <td>2/20/2014</td>
+                <td>AIR FORCE</td>
+                <td>APRO International Inc.</td>
+                <td>$220,685,367 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="86/">86</a></td>
+                <td>2/20/2014</td>
+                <td>ARMY</td>
+                <td>Ameresco Inc.</td>
+                <td>$7,000,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="87/">87</a></td>
+                <td>2/20/2014</td>
+                <td>NAVY</td>
+                <td>Engility Corp.</td>
+                <td>$24,882,608 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="88/">88</a></td>
+                <td>2/20/2014</td>
+                <td>NAVY</td>
+                <td>A-T Solutions Inc.</td>
+                <td>$23,538,703 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="89/">89</a></td>
+                <td>2/20/2014</td>
+                <td>NAVY</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$9,515,086 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="90/">90</a></td>
+                <td>2/21/2014</td>
+                <td>ARMY</td>
+                <td>General Atomics</td>
+                <td>$76,215,685 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="91/">91</a></td>
+                <td>2/21/2014</td>
+                <td>ARMY</td>
+                <td>General Atomics</td>
+                <td>$18,109,374 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="92/">92</a></td>
+                <td>2/21/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>EnerSys</td>
+                <td>$40,263,852 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="93/">93</a></td>
+                <td>2/21/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Sysco Corp.</td>
+                <td>$24,400,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="94/">94</a></td>
+                <td>2/21/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Exide Technologies</td>
+                <td>$18,546,992 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="95/">95</a></td>
+                <td>2/21/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Rockwell Collins-ESA Vision Systems</td>
+                <td>$12,235,755 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="96/">96</a></td>
+                <td>2/21/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Actavis Plc</td>
+                <td>$7,692,983 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="97/">97</a></td>
+                <td>2/21/2014</td>
+                <td>NAVY</td>
+                <td>Multiple</td>
+                <td>$232,897,406 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="98/">98</a></td>
+                <td>2/21/2014</td>
+                <td>NAVY</td>
+                <td>Multiple</td>
+                <td>$66,256,118 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="99/">99</a></td>
+                <td>2/21/2014</td>
+                <td>NAVY</td>
+                <td>Engility Corp.</td>
+                <td>$39,969,545 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="100/">100</a></td>
+                <td>2/21/2014</td>
+                <td>NAVY</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$23,555,382 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="101/">101</a></td>
+                <td>2/21/2014</td>
+                <td>NAVY</td>
+                <td>BAE Systems Plc</td>
+                <td>$19,227,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="102/">102</a></td>
+                <td>2/21/2014</td>
+                <td>NAVY</td>
+                <td>York International Corp.</td>
+                <td>$11,100,082 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="103/">103</a></td>
+                <td>2/24/2014</td>
+                <td>AIR FORCE</td>
+                <td>Raytheon Co.</td>
+                <td>$20,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="104/">104</a></td>
+                <td>2/24/2014</td>
+                <td>AIR FORCE</td>
+                <td>Alliant Techsystems Inc.</td>
+                <td>$8,021,810 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="105/">105</a></td>
+                <td>2/24/2014</td>
+                <td>ARMY</td>
+                <td>Fidelity Technologies Corp.</td>
+                <td>$84,400,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="106/">106</a></td>
+                <td>2/24/2014</td>
+                <td>ARMY</td>
+                <td>Alliant Techsystems Inc.</td>
+                <td>$10,700,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="107/">107</a></td>
+                <td>2/24/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Alcon Inc.</td>
+                <td>$23,485,218 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="108/">108</a></td>
+                <td>2/24/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Hitachi-Aloka Medical Ltd.</td>
+                <td>$14,420,708 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="109/">109</a></td>
+                <td>2/24/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Omega Medical Imaging Inc.</td>
+                <td>$14,014,205 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="110/">110</a></td>
+                <td>2/24/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>FN Herstal</td>
+                <td>$7,620,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="111/">111</a></td>
+                <td>2/24/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>M&amp;M Manufacturing LLC</td>
+                <td>$7,039,102 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="112/">112</a></td>
+                <td>2/24/2014</td>
+                <td>NAVY</td>
+                <td>General Dynamics Corp.</td>
+                <td>$36,137,340 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="113/">113</a></td>
+                <td>2/24/2014</td>
+                <td>NAVY</td>
+                <td>Multiple</td>
+                <td>$25,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="114/">114</a></td>
+                <td>2/24/2014</td>
+                <td>NAVY</td>
+                <td>Raytheon Co.</td>
+                <td>$14,304,303 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="115/">115</a></td>
+                <td>2/24/2014</td>
+                <td>NAVY</td>
+                <td>Raytheon Co.</td>
+                <td>$9,430,218 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="116/">116</a></td>
+                <td>2/24/2014</td>
+                <td>NAVY</td>
+                <td>RWT LLC</td>
+                <td>$7,404,262 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="117/">117</a></td>
+                <td>2/25/2014</td>
+                <td>AIR FORCE</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$12,190,077 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="118/">118</a></td>
+                <td>2/25/2014</td>
+                <td>ARMY</td>
+                <td>Action Manufacturing Co.</td>
+                <td>$83,200,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="119/">119</a></td>
+                <td>2/25/2014</td>
+                <td>ARMY</td>
+                <td>Aerojet Rocketdyne Inc.</td>
+                <td>$12,566,969 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="120/">120</a></td>
+                <td>2/25/2014</td>
+                <td>ARMY</td>
+                <td>Treviicos South Inc.</td>
+                <td>$5,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="121/">121</a></td>
+                <td>2/25/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Protective Products Enterprises Inc.</td>
+                <td>$76,661,994 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="122/">122</a></td>
+                <td>2/25/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Steris Corp.</td>
+                <td>$27,381,687 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="123/">123</a></td>
+                <td>2/25/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Willbros Government Services LLC</td>
+                <td>$9,379,740 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="124/">124</a></td>
+                <td>2/25/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Zodiac Aerospace</td>
+                <td>$7,029,909 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="125/">125</a></td>
+                <td>2/25/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Todd&#39;s Quality Tomatoes</td>
+                <td>$7,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="126/">126</a></td>
+                <td>2/25/2014</td>
+                <td>NAVY</td>
+                <td>Boeing Co.</td>
+                <td>$2,070,439,240 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="127/">127</a></td>
+                <td>2/25/2014</td>
+                <td>NAVY</td>
+                <td>Seaward Services Inc.</td>
+                <td>$26,654,889 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="128/">128</a></td>
+                <td>2/26/2014</td>
+                <td>AIR FORCE</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$10,185,912 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="129/">129</a></td>
+                <td>2/26/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>BAE Systems Plc</td>
+                <td>$79,972,510 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="130/">130</a></td>
+                <td>2/26/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Tennier Industries</td>
+                <td>$15,709,270 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="131/">131</a></td>
+                <td>2/26/2014</td>
+                <td>DEPARTMENT OF DEFENSE EDUCATION ACTIVITY</td>
+                <td>Lincoln Public Schools</td>
+                <td>$12,016,371 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="132/">132</a></td>
+                <td>2/26/2014</td>
+                <td>DEPARTMENT OF DEFENSE EDUCATION ACTIVITY</td>
+                <td>Caesar Rodney School District</td>
+                <td>$8,191,180 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="133/">133</a></td>
+                <td>2/26/2014</td>
+                <td>NAVY</td>
+                <td>Harris Corp.</td>
+                <td>$37,497,686 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="134/">134</a></td>
+                <td>2/26/2014</td>
+                <td>NAVY</td>
+                <td>Environmental Management Inc.</td>
+                <td>$21,486,839 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="135/">135</a></td>
+                <td>2/27/2014</td>
+                <td>ARMY</td>
+                <td>VS2 LLC</td>
+                <td>$41,950,284 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="136/">136</a></td>
+                <td>2/27/2014</td>
+                <td>ARMY</td>
+                <td>Diversified Construction of Oklahoma</td>
+                <td>$22,500,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="137/">137</a></td>
+                <td>2/27/2014</td>
+                <td>ARMY</td>
+                <td>BAE Systems Plc</td>
+                <td>$21,391,241 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="138/">138</a></td>
+                <td>2/27/2014</td>
+                <td>ARMY</td>
+                <td>QED Systems LLC</td>
+                <td>$7,443,765 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="139/">139</a></td>
+                <td>2/27/2014</td>
+                <td>ARMY</td>
+                <td>Truestone LLC</td>
+                <td>$6,685,148 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="140/">140</a></td>
+                <td>2/27/2014</td>
+                <td>ARMY</td>
+                <td>Raytheon Co.</td>
+                <td>$6,651,471 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="141/">141</a></td>
+                <td>2/27/2014</td>
+                <td>DEFENSE FINANCE AND ACCOUNTING SERVICE</td>
+                <td>Immixtechnology Inc.</td>
+                <td>$7,843,432 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="142/">142</a></td>
+                <td>2/27/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Avox Systems Inc.</td>
+                <td>$19,011,985 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="143/">143</a></td>
+                <td>2/27/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>Petro Star Inc.</td>
+                <td>$7,939,809 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="144/">144</a></td>
+                <td>2/27/2014</td>
+                <td>NAVY</td>
+                <td>Boeing Co.</td>
+                <td>$49,816,500 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="145/">145</a></td>
+                <td>2/27/2014</td>
+                <td>NAVY</td>
+                <td>Booz Allen Hamilton Inc.</td>
+                <td>$17,665,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="146/">146</a></td>
+                <td>2/27/2014</td>
+                <td>NAVY</td>
+                <td>IAP World Services Inc.</td>
+                <td>$9,190,177 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="147/">147</a></td>
+                <td>2/28/2014</td>
+                <td>AIR FORCE</td>
+                <td>Infoscitex Corp.</td>
+                <td>$60,100,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="148/">148</a></td>
+                <td>2/28/2014</td>
+                <td>AIR FORCE</td>
+                <td>Battlespace Inc.</td>
+                <td>$8,649,020 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="149/">149</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Raytheon Co.</td>
+                <td>$655,413,297 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="150/">150</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Walker Miller Equipment Co</td>
+                <td>$84,221,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="151/">151</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$25,162,654 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="152/">152</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Northrop Grumman Corp.</td>
+                <td>$15,904,914 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="153/">153</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Pride Industries</td>
+                <td>$13,844,609 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="154/">154</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Quinlivan Pierik &amp; Krause Architects/Engineers LLP</td>
+                <td>$9,900,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="155/">155</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Survice Engineering Co.</td>
+                <td>$9,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="156/">156</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>BAE Systems Plc</td>
+                <td>$7,918,125 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="157/">157</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>Manufacturing Support Industries</td>
+                <td>$7,612,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="158/">158</a></td>
+                <td>2/28/2014</td>
+                <td>ARMY</td>
+                <td>SRCTec Inc.</td>
+                <td>$7,222,543 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="159/">159</a></td>
+                <td>2/28/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>SupplyCore</td>
+                <td>$340,000,000 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="160/">160</a></td>
+                <td>2/28/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>TW Metals</td>
+                <td>$78,768,905 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="161/">161</a></td>
+                <td>2/28/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>US Worldmeds LLC</td>
+                <td>$29,978,934 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="162/">162</a></td>
+                <td>2/28/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>General Electric Co.</td>
+                <td>$19,847,688 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="163/">163</a></td>
+                <td>2/28/2014</td>
+                <td>DEFENSE LOGISTICS AGENCY</td>
+                <td>General Electric Co.</td>
+                <td>$12,756,275 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="164/">164</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Textron Inc.-Boeing Co.</td>
+                <td>$351,009,568 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="165/">165</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Multiple</td>
+                <td>$152,250,696 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="166/">166</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>NVE Inc.</td>
+                <td>$77,324,605 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="167/">167</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Rolls-Royce Plc</td>
+                <td>$54,305,623 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="168/">168</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Boeing Co.</td>
+                <td>$22,401,663 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="169/">169</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>General Dynamics Corp.</td>
+                <td>$19,898,974 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="170/">170</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Airborne Systems Ltd.</td>
+                <td>$17,976,844 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="171/">171</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>General Dynamics Corp.</td>
+                <td>$15,978,977 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="172/">172</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Lockheed Martin Corp.</td>
+                <td>$10,798,739 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="173/">173</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Allen &amp; Shariff Corp.</td>
+                <td>$8,895,680 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="174/">174</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Rolls-Royce Plc</td>
+                <td>$8,021,387 </td>
+            </tr>
+        
+            <tr>
+                <td><a href="175/">175</a></td>
+                <td>2/28/2014</td>
+                <td>NAVY</td>
+                <td>Austal</td>
+                <td>$7,120,153 </td>
+            </tr>
+        
+        </table>
+    </body>
+</html>
