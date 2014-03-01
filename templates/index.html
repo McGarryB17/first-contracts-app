@@ -3,8 +3,25 @@
     <head></head>
     <body>
         <h1>Defense Department contracts announced in February</h1>
+        <div id="chartContainer">
+            <script src="http://d3js.org/d3.v3.min.js"></script>
+            <script src="http://dimplejs.org/dist/dimple.v1.1.5.min.js"></script>
+            <script type="text/javascript">
+            var svg = dimple.newSvg("#chartContainer", 590, 400);
+            d3.csv("static/daily_totals.csv", function (data) {
+            var myChart = new dimple.chart(svg, data);
+            myChart.setBounds(60, 30, 510, 305)
+            var x = myChart.addCategoryAxis("x", "Date");
+            x.addOrderRule("Date");
+            myChart.addMeasureAxis("y", "Amount");
+            myChart.addSeries(null, dimple.plot.bar);
+            myChart.draw();
+            });
+            </script>
+        </div>
         <table border=1 cellpadding=7>
             <tr>
+                <th>ID</th>
                 <th>Date</th>
                 <th>Service</th>
                 <th>Company</th>
@@ -12,6 +29,7 @@
             </tr>
         {% for obj in object_list %}
             <tr>
+                <td><a href="{{ obj.ID }}/">{{ obj.ID }}</a></td>
                 <td>{{ obj.Date }}</td>
                 <td>{{ obj.Service }}</td>
                 <td>{{ obj.Parent }}</td>
